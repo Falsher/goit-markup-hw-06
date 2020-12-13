@@ -1,0 +1,15 @@
+{
+    "spellright.language": [
+        "en",
+        "ru"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+
+
+    
+    "editor.formatOnSave": true
+}
