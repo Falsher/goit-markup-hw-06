@@ -231,18 +231,35 @@ body {
 }
 
 .modal button {
+    position: absolute;
     width: 30px;
     height: 30px;
     background-color: var(--first-color);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 8px 8px 543px 490px;
+    top: 8px;
+    right: 8px;
     cursor: pointer
 }
 
 .modal-vektor {
     width: 11px;
     height: 11px;
+}
+
+
+
+.send h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.send-title {
+    display: block;
 }
 
 /*features*/
@@ -471,10 +488,11 @@ body {
 }
 
 .footer-title {
+    display: block;
     color: var(--first-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.15;
+    line-height: 1.17;
     margin-bottom: 20px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -545,6 +563,61 @@ address p {
 .footer-link a:hover,
 .footer-link a:focus {
     color: var(--accent-color);
+}
+
+/*форма в футере*/
+.subscription {
+    margin-left: 93px;
+
+}
+
+
+.subscription input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px 295px 15px 16px;
+}
+
+
+
+
+
+.subscription button {
+    margin-left: 12px;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+
+
+
+}
+
+.subm {
+    padding: 10px 62px 10px 29px;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--first-color);
+}
+
+.iconsend {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    fill: var(--first-color);
 }
 
 /*страница portfolio*/

@@ -307,16 +307,54 @@
                     </a>
                 </div>
             </div>
+            <div class="subscription">
+                <form action="">
+                    <label for="mail">
+                        <span class="footer-title">Подпишитесь на рассылку</span>
+                    </label>
+                    <input type="email" id="mail" name="mail" placeholder="E-mail">
+                    <button type="submit"><span class="subm">Подписаться</span>
+                        <svg class="iconsend">
+                            <use href="./image/sprite.svg#iconsend"></use>
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
+
         <div class="modal">
-            <button data-modal-close type="button">
+
+            <button class="modalButton" data-modal-close type="button">
                 <svg class="modal-vektor">
                     <use href="./image/sprite.svg#close"></use>
                 </svg>
             </button>
+            <div class="send">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <form action="">
+                    <label for="name">
+                        <span class="send-title">Имя</span>
+                    </label>
+                    <input type="text" id="name" name="name">
+                    <label for="phone">
+                        <span class="send-title">Телефон</span>
+                    </label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="mail">
+                        <span class="send-title">Почта</span>
+                    </label>
+                    <input type="email" id="mail" name="mail">
+                    <label for="koment">
+                        <span class="send-title">Комментарий</span>
+                    </label>
+                    <textarea name="" id="koment" cols="30"></textarea>
+                </form>
+            </div>
         </div>
+
     </div>
     <script src="./js/modal.js"></script>
 </body>
