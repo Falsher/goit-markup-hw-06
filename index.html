@@ -308,7 +308,7 @@
                 </div>
             </div>
             <div class="subscription">
-                <form action="">
+                <form action="" class="footerForm">
                     <label for="mail">
                         <span class="footer-title">Подпишитесь на рассылку</span>
                     </label>
@@ -334,23 +334,36 @@
             </button>
             <div class="send">
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                <form action="">
-                    <label for="name">
+                <form action="" class="form">
+                    <label class="sendName">
                         <span class="send-title">Имя</span>
+
+                        <input type="text" name="name">
+                        <svg class="iconperson">
+                            <use href="./image/sprite.svg#person"></use>
+                        </svg>
                     </label>
-                    <input type="text" id="name" name="name">
-                    <label for="phone">
+                    <label class="sendPhone">
                         <span class="send-title">Телефон</span>
+
+                        <input type="tel" name="phone">
+                        <svg class="iconphone">
+                            <use href="./image/sprite.svg#phone"></use>
+                        </svg>
                     </label>
-                    <input type="tel" id="phone" name="phone">
-                    <label for="mail">
+                    <label class="sendEmail">
                         <span class="send-title">Почта</span>
+
+                        <input type="email" name="mail">
+                        <svg class="iconemail">
+                            <use href="./image/sprite.svg#email"></use>
+                        </svg>
                     </label>
-                    <input type="email" id="mail" name="mail">
-                    <label for="koment">
+                    <label>
                         <span class="send-title">Комментарий</span>
+
+                        <textarea name="" placeholder="Введите текст"></textarea>
                     </label>
-                    <textarea name="" id="koment" cols="30"></textarea>
                 </form>
             </div>
         </div>

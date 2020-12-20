@@ -251,17 +251,110 @@ body {
 
 .send h2 {
     margin-top: 40px;
+    margin-bottom: 12px;
     text-align: center;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.03em;
+
+}
+
+.send-title {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form>label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-top: 12px;
+    padding-left: 16px;
 }
 
 .send-title {
     display: block;
 }
 
+.form {
+
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.sendName {
+    position: relative;
+}
+
+.iconperson {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+
+}
+
+.sendPhone {
+    position: relative;
+}
+
+.iconphone {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+
+}
+
+.sendEmail {
+    position: relative;
+}
+
+.iconemail {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+
+}
+
+.form input:hover {
+
+    border: 1px solid var(--accent-color);
+}
+
+/*
+.sendName::after{
+
+}
+*/
 /*features*/
 .features-gray {
     display: flex;
@@ -581,6 +674,7 @@ address p {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0);
     padding: 15px 295px 15px 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -596,9 +690,8 @@ address p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid var(--accent-color);
-
-
-
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer
 }
 
 .subm {
@@ -618,6 +711,15 @@ address p {
     width: 24px;
     height: 24px;
     fill: var(--first-color);
+}
+
+.footerForm input:hover {
+    border: 1px solid var(--accent-color);
+
+}
+
+.footerForm button:hover {
+    background: #188CE8
 }
 
 /*страница portfolio*/
