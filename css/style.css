@@ -386,7 +386,7 @@ body {
 .emaillink:focus,
 .modalText:focus {
 
-    /*outline: 0; - так и не понял скрывать или нет????*/
+    outline: 0;
     border: 1px solid var(--accent-color);
 }
 
@@ -782,7 +782,7 @@ address p {
 
 /*форма в футере*/
 .subscription {
-    margin-left: 93px;
+    margin-left: auto;
 
 }
 
